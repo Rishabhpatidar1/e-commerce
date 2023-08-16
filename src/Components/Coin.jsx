@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import supercoin from "../Images/supercoin.png";
+import { DataContext } from "../context/Dataprovider";
 
 const Coin = () => {
+  const { account, setAccount } = useContext(DataContext);
   return (
     <div className="coinmain">
       <div className="leftpart">
@@ -18,11 +21,17 @@ const Coin = () => {
       <div className="rightpart">
         <div className="thecard">
           <div className="thefront">
-            <img
-            //   src="https://cutewallpaper.org/28/business-card-background-wallpaper/209599739.jpg"
-            //   alt=""
-            />
-            <h2>frontend</h2>
+            {/* <img
+              src="https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-blue-credit-card-for-financial-technology-banner-image_196331.jpg"
+              alt=""
+            /> */}
+            <div className="firstrow">
+              <h2> {account} </h2>
+              <div className="coinname">
+                <img src={supercoin} alt="" />
+                <h2>supercoin</h2>
+              </div>
+            </div>
           </div>
           <div className="theback">
             <h2>backend</h2>

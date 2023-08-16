@@ -821,8 +821,12 @@ html,body{
   /* color: #333; */
   color: white;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.31);
+  overflow: hidden;
+  background-image: url("https://img.freepik.com/free-vector/gradient-futuristic-background-with-connection-concept_23-2149110797.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .theback{
@@ -834,6 +838,31 @@ html,body{
   /* color: #333; */
   color: white;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   transform: rotateY(180deg);
 }
+
+.firstrow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstrow h2{
+  font-size: 21px;
+  font-family: "gilroy";
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+}
+
+.coinname{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.coinname img{
+  height: 28px;
+}
+

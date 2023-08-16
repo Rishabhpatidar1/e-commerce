@@ -5,7 +5,7 @@
 }
 
 .prodesc{
-    /* height: 150px; */
+    height: calc(100vh - 80px);
     width: 100%;
     padding: 40px;
     /* background-color: red; */
