@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+import React from 'react'
+// import Navbar from './Components/Navbar'
+import { BrowserRouter as Router , Routes , Route
+ } from 'react-router-dom';
+import Home from './Pages/Home'
+// import Login from "./Pages/Signup"
+import Signup from './Pages/Signup';
+import Signin from './Pages/Signin';
+import DataProvider from './context/Dataprovider';
+import Supercoin from './Pages/Supercoin';
+import Productdesc from "./Pages/Productdesc"
+import Navbar from './Components/Navbar';
+import Productpage from './Pages/Productpage';
+import Createproduct from './Pages/Createproduct';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+    <Router>
+     
+      <Routes>
+        <Route
+          index
+          path="/"
+          element={<Home />}/>
+        <Route path="/login" element={<Signup />} />
+        <Route path="/register" element={<Signin />} />
+        <Route path="/supercoin" element={<Supercoin />} />
+        <Route path="/product/:id" element={<Productpage />} />
+        <Route path="/create" element={<Createproduct />} />
+      </Routes>
+    </Router>
+    </DataProvider>
   );
 }
 
-export default App;
+export default App
