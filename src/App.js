@@ -14,6 +14,7 @@ import Productdesc from "./Pages/Productdesc"
 import Navbar from './Components/Navbar';
 import Productpage from './Pages/Productpage';
 import Createproduct from './Pages/Createproduct';
+import Cart from './Pages/Cart';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/supercoin" element={<Supercoin />} />
         <Route path="/product/:id" element={<Productpage />} />
         <Route path="/create" element={<Createproduct />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
     </DataProvider>

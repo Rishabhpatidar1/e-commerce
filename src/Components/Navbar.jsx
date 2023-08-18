@@ -29,7 +29,7 @@ const Navbar = () => {
         <i class="ri-search-line"></i>
       </div>
       <div className="rightnav">
-        <div className="cart">
+        <div onClick={() => navigate("/cart")} className="cart">
           <i class="ri-shopping-cart-2-line"></i>
           <p>cart</p>
         </div>

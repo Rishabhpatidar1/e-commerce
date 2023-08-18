@@ -23,6 +23,7 @@ const Signin = () => {
 
   const loginUser = async () => {
     let response = await authenticateLogin(login);
+    console.log(response);
     console.log(response.data.data?.username);
     if (response.status === 200) {
       setAccount(response.data.data?.username);

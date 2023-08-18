@@ -866,3 +866,307 @@ html,body{
   height: 28px;
 }
 
+.cartcontainer{
+  height: calc(100vh - 80px);
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  background-color: #dadada;
+}
+
+.leftcont{
+  height: inherit;
+  width: 70%;
+  /* background-color: green; */
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rightcont{
+  height: inherit;
+  width: 30%;
+  /* background-color: grey; */
+  padding: 40px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+}
+
+.itemscard{
+  height: 98%;
+  width: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.allsavedproducts{
+  height: 74%;
+  /* background-color: grey; */
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.namerow{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.namerow h2{
+  font-size: 22px;
+  font-family: "gilroy";
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.cartcontainer .hr {
+  width: 100%;
+  color: #dfdfdf;
+  margin-bottom: 20px;
+}
+
+.hr2{
+  width: 100%;
+  color: #dfdfdf;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.smallcontainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallcontainer .productDets{
+  width: 48%;
+}
+
+.productDets h4{
+  font-size: 14px;
+  font-family: "gilroy";
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #a3a3a3;
+}
+
+.smallcontainer .productPrice{
+  width: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productPrice h4{
+  font-size: 14px;
+  font-family: "gilroy";
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #a3a3a3;
+}
+
+.proimage{
+  width: 44%;
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product1details{
+  height: 100px;
+  border-bottom: 2px solid #a3a3a3;
+  margin-top: 20px;
+  display: flex;
+}
+
+.product1img{
+  height: 80px;
+  width: 80px;
+  /* background-color: red; */
+  border-radius: 5px;
+  overflow: hidden;
+  /* gap: 10px; */
+}
+
+.product1img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product1name h2{
+  /* font-size: 15px; */
+  font-family: "gilroy";
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.product1name h4{
+  font-family: "gilroy";
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.product1name i{
+  font-size: 18px;
+  font-weight: 500;
+  color: red;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.product1smdets{
+  width: 56%;
+  /* background-color: grey; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productquantity{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.decrementbutton{
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: white;
+  margin-right: 6px;
+  padding: 0.1px 10px;
+  /* background-color: #999; */
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.150);
+}
+
+.incrementbutton{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  margin-left: 6px;
+  padding: 4.5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.150);
+}
+
+.centerbutton {
+  padding: 6px 20px;
+  background-color: white;
+  /* border: 1px solid #999; */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.150);
+}
+
+.product1smdets h4{
+  font-size: 18px;
+  font-family: "gilroy";
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+}
+
+.ordersummary{
+  height: 80%;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.ordersummary h2{
+  font-size: 22px;
+  font-family: "gilroy";
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.smcard {
+  width: 100%;
+}
+
+.subtotal{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.subtotal h4{
+  font-family: "gilroy";
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #515151;
+
+}
+
+.promo h3{
+  margin-top: 20px;
+}
+
+.promo h3{
+  font-size: 16px;
+  font-family: "gilroy";
+  font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+}
+
+.promo input {
+  margin-top: 10px;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.144) !important;
+}
+
+.promo button{
+  font-size: 15px;
+  font-family: "gilroy";
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #FA7474;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 25px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.144);
+}
+
+.totalcost{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout{
+  height: 34px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "gilroy";
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #5D50DD;
+  color: white;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.144);
+}

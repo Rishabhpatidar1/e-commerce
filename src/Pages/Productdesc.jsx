@@ -1,21 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Prodesc.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getProductDetails } from "../redux/action/productActions";
+import { useNavigate } from "react-router-dom";
+import { addToCart } from "../redux/action/cartActions";
 
 const Productdesc = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { id } = useParams();
 
   const { loading, product } = useSelector((state) => state.getProductDetails);
 
   useEffect(() => {
     if (product && id !== product._id) dispatch(getProductDetails(id));
+    // console.log(id);
   }, [dispatch, id, product, loading]);
 
   console.log(product);
+  const [quantity, setQuantity] = useState(1);
+
+  const addItem = () => {
+    console.log(id);
+    dispatch(addToCart(id, quantity));
+    navigate("/cart");
+  };
   return (
     <div className="main">
       {product && Object.keys(product).length && (
@@ -43,7 +54,9 @@ const Productdesc = () => {
                 </div>
               </div>
               <div class="biding">
-                <div className="addtocart">Add to Cart</div>
+                <div onClick={() => addItem()} className="addtocart">
+                  Add to Cart
+                </div>
                 <div className="buynow">Buy Now</div>
               </div>
             </div>
